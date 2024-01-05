@@ -1,0 +1,11 @@
+                        insert              append
+
+extraLargeArray         1.0657522 s         2.8145 ms
+largeArray              15.1243 ms          1.9994 ms
+mediumArray             189.5 μs            182.4 μs
+smallArray              75.8 μs             103.9 μs
+tinyArray               36.2 μs             97.6 μs
+
+
+The larger an array becomes, the longer it takes for the doublerInsert function to perform it's code. While inversely related, the larger an array becomes the quicker doublerAppend function performs it's code.
+The push method in append is a simple process that adds a new num and index, while unshift method add a new num at the beginning of the array, rearranging the entire list of num positions and therefore index. By reasoning, we can see that doublerAppend function scales better at higher list items.
